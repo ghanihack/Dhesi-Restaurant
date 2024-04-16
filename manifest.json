@@ -1,12 +1,12 @@
 {
-  "name": "Dhesi Restaurant app",
-  "short_name": "Dhesi Restaurant app",
+  "name": "Dhesi Restaurant App",
+  "short_name": "Dhesi Restaurant App",
   "lang": "en-US",
   "start_url": ".",
   "display": "standalone",
   "background_color": "black",
   "theme_color": "#ff8d2f",
-  "description": "Dhesi Restaurant app",
+  "description": "Dhesi Restaurant App",
   "icons": [
     {
       "src": "favicon.png",
