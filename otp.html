@@ -48,36 +48,39 @@
   <!-- header end -->
 
   <!-- otp start -->
-  <div class="custom-container">
-    <div class="otp-verification">
-      <h3>We have sent a verification code to</h3>
-      <h3 class="otp-number mt-2">+(101) 635 546 23098</h3>
-    </div>
-    <form class="otp-form">
-      <div class="form-input dark-border-gradient">
-        <input type="number" class="form-control active" placeholder="0" id="five1" onkeyup="onKeyUpEvent(1, event)"
-          onfocus="onFocusEvent(1)" />
-      </div>
-      <div class="form-input dark-border-gradient">
-        <input type="number" class="form-control" placeholder="0" id="five2" onkeyup="onKeyUpEvent(2, event)"
-          onfocus="onFocusEvent(2)" />
-      </div>
-      <div class="form-input dark-border-gradient">
-        <input type="number" class="form-control" placeholder="0" id="five3" onkeyup="onKeyUpEvent(3, event)"
-          onfocus="onFocusEvent(3)" />
-      </div>
-      <div class="form-input dark-border-gradient">
-        <input type="number" class="form-control" placeholder="0" id="five4" onkeyup="onKeyUpEvent(4, event)"
-          onfocus="onFocusEvent(4)" />
-      </div>
-      <div class="form-input dark-border-gradient">
-        <input type="number" class="form-control" placeholder="0" id="five5" onkeyup="onKeyUpEvent(5, event)"
-          onfocus="onFocusEvent(5)" />
-      </div>
-    </form>
-    <a href="restaurant-partner-details.html" class="btn theme-btn w-100" role="button">Continue</a>
+<div class="custom-container">
+  <div class="otp-verification">
+    <h3>We have sent a verification code to</h3>
+    <!-- Custom data for verification code -->
+    <h3 class="otp-number mt-2">Enter your verification code</h3>
   </div>
-  <!-- otp end -->
+  <form class="otp-form">
+    <!-- Custom input fields for OTP digits -->
+    <div class="form-input dark-border-gradient">
+      <input type="number" class="form-control active" placeholder="0" id="five1" onkeyup="onKeyUpEvent(1, event)"
+        onfocus="onFocusEvent(1)" />
+    </div>
+    <div class="form-input dark-border-gradient">
+      <input type="number" class="form-control" placeholder="0" id="five2" onkeyup="onKeyUpEvent(2, event)"
+        onfocus="onFocusEvent(2)" />
+    </div>
+    <div class="form-input dark-border-gradient">
+      <input type="number" class="form-control" placeholder="0" id="five3" onkeyup="onKeyUpEvent(3, event)"
+        onfocus="onFocusEvent(3)" />
+    </div>
+    <div class="form-input dark-border-gradient">
+      <input type="number" class="form-control" placeholder="0" id="five4" onkeyup="onKeyUpEvent(4, event)"
+        onfocus="onFocusEvent(4)" />
+    </div>
+    <div class="form-input dark-border-gradient">
+      <input type="number" class="form-control" placeholder="0" id="five5" onkeyup="onKeyUpEvent(5, event)"
+        onfocus="onFocusEvent(5)" />
+    </div>
+  </form>
+  <!-- Custom button to proceed -->
+  <button class="btn theme-btn w-100" onclick="verifyOTP()">Verify OTP</button>
+</div>
+<!-- otp end --> 
 
   <!-- otp js -->
   <script src="otp.js"></script>
