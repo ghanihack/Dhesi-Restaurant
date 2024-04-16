@@ -36,46 +36,56 @@
 
 <body>
   <!-- login page start -->
-  <section class="section-b-space pt-0">
-    <img class="img-fluid login-img restaurant-login-img auth-img"
-      src="restaurant.png" alt="restaurant" />
+<section class="section-b-space pt-0">
+  <img class="img-fluid login-img restaurant-login-img auth-img"
+    src="restaurant.png" alt="restaurant" />
 
-    <div class="custom-container">
-      <form class="auth-form mt-4">
-        <h2>Enter your mobile number to get OTP</h2>
+  <div class="custom-container">
+    <form class="auth-form mt-4">
+      <h2>Enter your details to proceed</h2>
 
-        <div class="form-group mt-4">
-          <label class="form-label fw-semibold dark-text">Mobile Number</label>
-          <div class="d-flex gap-3">
-            <div class="dropdown dark-border-gradient">
-              <a class="btn dropdown-toggle mt-0" href="#" role="button" data-bs-toggle="dropdown">+101 </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item">+101</a></li>
-                <li><a class="dropdown-item">+102</a></li>
-                <li><a class="dropdown-item">+103</a></li>
-              </ul>
-            </div>
-            <div class="form-input dark-border-gradient">
-              <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number" />
-            </div>
-          </div>
+      <!-- Custom input field for email -->
+      <div class="form-group mt-4">
+        <label class="form-label fw-semibold dark-text">Email Address <span class="text-danger">*</span></label>
+        <div class="form-input dark-border-gradient">
+          <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
         </div>
-
-        <a href="otp.html" class="btn theme-btn w-100 mt-4" role="button">Send OTP</a>
-      </form>
-
-      <div class="division">
-        <span>OR</span>
       </div>
 
-      <a href="https://www.google.co.in/" class="btn gray-btn mt-3"> <img class="img-fluid google"
-          src="../assets/images/icons/google.svg" alt="google" /> Continue with Google</a>
+      <!-- Custom input field for mobile number -->
+      <div class="form-group mt-4">
+        <label class="form-label fw-semibold dark-text">Mobile Number <span class="text-danger">*</span></label>
+        <div class="d-flex gap-3">
+          <div class="dropdown dark-border-gradient">
+            <a class="btn dropdown-toggle mt-0" href="#" role="button" data-bs-toggle="dropdown">+91 </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">+1</a></li>
+            </ul>
+          </div>
+          <div class="form-input dark-border-gradient">
+            <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number" required />
+          </div>
+        </div>
+      </div>
 
-      <p class="text-center">By continue, you agree to our Terms of service Privacy Policy Content Policy</p>
+      <!-- Button to send OTP -->
+      <button type="submit" class="btn theme-btn w-100 mt-4">Send OTP</button>
+    </form>
+
+    <div class="division">
+      <span>OR</span>
     </div>
-  </section>
 
-  <!-- login page end -->
+    <!-- Button to sign in with custom Gmail ID -->
+    <a href="https://accounts.google.com/signin/oauth/oauthchooseaccount?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&scope=email&response_type=token" class="btn gray-btn mt-3">
+      <img class="img-fluid google" src="../assets/images/icons/google.svg" alt="google" />
+      Sign in with Gmail
+    </a>
+
+    <p class="text-center">By continuing, you agree to our Terms of Service, Privacy Policy, and Content Policy</p>
+  </div>
+</section>
+<!-- login page end -->
 
   <!-- bootstrap js -->
   <script src="bootstrap.bundle.min.js"></script>
